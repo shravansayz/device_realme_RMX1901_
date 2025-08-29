@@ -4,11 +4,16 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-# Inherit some common DerpFest stuff
+# Inherit some common Lunaris stuff
 TARGET_BOOT_ANIMATION_RES := 1080
-DERPFEST_BUILD_TYPE := Community
-DERPFEST_BUILD_VARIANT := Stable
+TARGET_SUPPORTS_QUICK_TAP := true
+PRODUCT_NO_CAMERA := false
 TARGET_DISABLE_EPPE := true
+WITH_GMS := true
+TARGET_USES_CORE_GAPPS := true
+WITH_BCR := true
+TARGET_USE_LOWRAM_PROFILE := true
+TARGET_DEFAULT_PIXEL_LAUNCHER := false
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Inherit from RMX1901 device

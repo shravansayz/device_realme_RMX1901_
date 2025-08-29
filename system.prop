@@ -146,3 +146,6 @@ persist.sys.wfd.virtual=0
 
 # Enable Vulkan for HWUI
 ro.hwui.use_vulkan=true
+
+#maintainar flag 
+ro.paranoid.maintainer=SHRAVAN (SK)

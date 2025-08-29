@@ -15,6 +15,9 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <!-- About device maintainer -->
-    <string name="derpfest_maintainer">Shravan (SK)</string>
+    <!-- Model and Hardware -->
+    <string name="lunaris_device_message">Realme X</string>
+    <string name="lunaris_processor_code_message">Snapdragon® 710</string>
+    <string name="lunaris_battery_type_message">3765 mAh</string>
+    <string name="lunaris_screen_message">AMOLED 60hz</string>
 </resources>
