@@ -196,6 +196,22 @@ $(call soong_config_set,lineage_health,charging_control_charging_path,/sys/class
 PRODUCT_PACKAGES += \
     vendor.lineage.livedisplay-service.sdm
 
+$(call soong_config_set,livedisplay_sdm,enable_dm,false)
+
+# Logging
+SPAMMY_LOG_TAGS := \
+    AccessPersistence \
+    AiAiEcho \
+    AppOps \
+    AppOpService\
+    HWUI \
+    ResilientAtomicFile
+
+ifneq ($(TARGET_BUILD_VARIANT),eng)
+PRODUCT_VENDOR_PROPERTIES += \
+    $(foreach tag,$(SPAMMY_LOG_TAGS),log.tag.$(tag)=S)
+endif
+
 # Media
 PRODUCT_PACKAGES += \
     libminijail \
