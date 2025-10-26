@@ -12,7 +12,6 @@ TARGET_DISABLE_EPPE := true
 WITH_GMS := true
 TARGET_USES_CORE_GAPPS := true
 WITH_BCR := true
-TARGET_USE_LOWRAM_PROFILE := true
 TARGET_DEFAULT_PIXEL_LAUNCHER := false
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
